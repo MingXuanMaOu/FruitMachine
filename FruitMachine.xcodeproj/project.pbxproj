@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47077842297451EA00B9BB66 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 47077841297451EA00B9BB66 /* Sounds */; };
+		470778442974521A00B9BB66 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470778432974521A00B9BB66 /* LogoView.swift */; };
+		470778462974531200B9BB66 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470778452974531200B9BB66 /* Modifiers.swift */; };
+		470778482974562400B9BB66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470778472974562400B9BB66 /* Extensions.swift */; };
+		4707784A29745CF400B9BB66 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707784929745CF400B9BB66 /* ReelView.swift */; };
+		4707784C2974615500B9BB66 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707784B2974615500B9BB66 /* InfoView.swift */; };
 		474C46242974499700ACE541 /* FruitMachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C46232974499700ACE541 /* FruitMachineApp.swift */; };
 		474C46262974499700ACE541 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C46252974499700ACE541 /* ContentView.swift */; };
 		474C46282974499900ACE541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474C46272974499900ACE541 /* Assets.xcassets */; };
@@ -14,11 +20,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47077841297451EA00B9BB66 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		470778432974521A00B9BB66 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		470778452974531200B9BB66 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		470778472974562400B9BB66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4707784929745CF400B9BB66 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
+		4707784B2974615500B9BB66 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		474C46202974499700ACE541 /* FruitMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474C46232974499700ACE541 /* FruitMachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitMachineApp.swift; sourceTree = "<group>"; };
 		474C46252974499700ACE541 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		474C46272974499900ACE541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		474C462A2974499900ACE541 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		474C463229744A7800ACE541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,11 @@
 		474C46222974499700ACE541 /* FruitMachine */ = {
 			isa = PBXGroup;
 			children = (
+				47077841297451EA00B9BB66 /* Sounds */,
+				474C463329744AB400ACE541 /* Helpers */,
+				474C463229744A7800ACE541 /* Info.plist */,
 				474C46232974499700ACE541 /* FruitMachineApp.swift */,
-				474C46252974499700ACE541 /* ContentView.swift */,
+				474C4631297449B800ACE541 /* View */,
 				474C46272974499900ACE541 /* Assets.xcassets */,
 				474C46292974499900ACE541 /* Preview Content */,
 			);
@@ -65,6 +81,26 @@
 				474C462A2974499900ACE541 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		474C4631297449B800ACE541 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				474C46252974499700ACE541 /* ContentView.swift */,
+				470778432974521A00B9BB66 /* LogoView.swift */,
+				4707784929745CF400B9BB66 /* ReelView.swift */,
+				4707784B2974615500B9BB66 /* InfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		474C463329744AB400ACE541 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				470778452974531200B9BB66 /* Modifiers.swift */,
+				470778472974562400B9BB66 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47077842297451EA00B9BB66 /* Sounds in Resources */,
 				474C462B2974499900ACE541 /* Preview Assets.xcassets in Resources */,
 				474C46282974499900ACE541 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4707784A29745CF400B9BB66 /* ReelView.swift in Sources */,
+				470778482974562400B9BB66 /* Extensions.swift in Sources */,
+				470778462974531200B9BB66 /* Modifiers.swift in Sources */,
 				474C46262974499700ACE541 /* ContentView.swift in Sources */,
+				470778442974521A00B9BB66 /* LogoView.swift in Sources */,
 				474C46242974499700ACE541 /* FruitMachineApp.swift in Sources */,
+				4707784C2974615500B9BB66 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +312,7 @@
 				DEVELOPMENT_TEAM = 498AB5R6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitMachine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +342,7 @@
 				DEVELOPMENT_TEAM = 498AB5R6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitMachine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
